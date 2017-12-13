@@ -59,11 +59,11 @@
   						<div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
   							<div class="main-form wow fadeInRight">
   								<h2 class="main-form-header">Для расчёта точной стоимости <br>закажите <strong>выезд замерщика</strong></h2>
-  								<form class="form" action="smart.php" method="POST">
-  									<label for="">Ваше имя</label>
-  									<input class="form-input" name="user_name" required type="text" placeholder="Аркадий">
-  									<label for="#">Номер телефона</label>
-  									<input class="form-input" name="user_phone" required id="phone" type="text">
+  								<form class="form" action="" method="POST">
+  									<label for="#name-1">Ваше имя</label>
+  									<input class="form-input" id="name-1" name="user_name" required type="text" placeholder="Аркадий">
+  									<label for="#phone-1">Номер телефона</label>
+  									<input class="form-input" id="phone-1" name="user_phone" required id="phone" type="text">
   									<button class="form-btn button" type="submit">оставить заявку</button>
   									<small>Приведем в день обращения</small>
   								</form>
@@ -809,7 +809,7 @@
 
     
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <!-- Стили Slick Slider -->
     <link rel="stylesheet" href="slick/slick.css">
@@ -817,9 +817,9 @@
 
     <!-- Скрипты slick -->
     <script src="slick/slick.min.js"></script>
-    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-    <script src="js/wow.min.js"></script>\
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+    <script src="js/wow.min.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
     
 
@@ -829,7 +829,7 @@
 		</script>
 		<script>
 			jQuery(function($){
-		   $("#phone").mask("+7 (999) 999-99-99");
+		   $("#phone-1").mask("+7 (999) 999-99-99");
 			});
 		</script>
     <script>
